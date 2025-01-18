@@ -1,0 +1,74 @@
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #b9b9b9;
+} */
+
+/*
+
+.app {
+    width: 350px;
+    height: 300px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+.counter {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    line-height: 120px;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    gap: 10px;
+} 
+
+*/
+
+/* .controls button {
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: #6B7A8F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.controls button:hover {
+    background-color: #54657D;
+    transform: scale(1.05);
+}
+
+.controls button:active {
+    transform: scale(0.95);
+} */
