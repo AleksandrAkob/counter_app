@@ -1,3 +1,6 @@
+import Slider from '../slider/Slider'
+
+
 import { useState } from "react"
 
 const productsArr = [
@@ -8,19 +11,19 @@ const productsArr = [
 ]
 
 
-
 export function Products() {
 
-  const [count, setCount] = useState(0)
+
+  const [price, setPrice] = useState(0)
   const [activeBtn, setActiveBtn] = useState(0)
 
   const handleClick = (value) => {
-    setCount(value)
+    setPrice(value)
     setActiveBtn(value)
   }
 
 
-  const products = productsArr.filter((prod) => Number(prod.price) > count)
+  const products = productsArr.filter((prod) => Number(prod.price) > price)
 
 
   const prodArr = products.map((product, index) => {
@@ -34,10 +37,12 @@ export function Products() {
   return (
     <>
 
+      <Slider handleClick={handleClick} price={price} />
+
     <div style={{ display: 'flex', gap: "20px" }}>
       {prodArr}
-    </div>
-
+      </div>
+      
     <div className="btn-group">
          <button className={`btn ${activeBtn == 0 ? 'btn-outline-primary' : 'btn-primary'}`} onClick={() => handleClick(0)}>Больше 0</button>
         <button className={`btn ${activeBtn == 20000 ? 'btn-outline-primary' : 'btn-primary'}`} onClick={() => handleClick(20000)}>Больше 2</button>
